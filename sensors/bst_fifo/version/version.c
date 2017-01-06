@@ -5,7 +5,7 @@
 
 static const char daemon_version_str[] = "3.0.39";
 static const char hal_version_str[] = "3.0.17";
-static const char date_str[] = "2015-08-05 17:14:05";
+static const char date_str[] = "2017-01-06 13:04:08";
 const char* get_daemon_version(void)
 {
 	return daemon_version_str;
