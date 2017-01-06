@@ -139,8 +139,6 @@ lib/libomadrmutils_jni.so
 vendor/lib/drm/libomadrmengine.so
 
 # GPS
-etc/permissions/com.qualcomm.location.xml
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/lib/hw/flp.default.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
@@ -233,8 +231,6 @@ vendor/lib/libqmi_encdec.so
 -vendor/lib/libqmi.so
 vendor/lib/libsmemlog.so
 vendor/lib/libconnctrl.so
-vendor/lib/libQtiTether.so
--priv-app/QtiTetherService/QtiTetherService.apk
 
 # Radio
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
