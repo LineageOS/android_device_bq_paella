@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa3479d7_c69574e5",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 10988
+      },
+      "writtenOn": "2017-01-07T00:56:14Z",
+      "side": 1,
+      "message": "Let\u0027s add (c) 2017 LineageOS here",
+      "revId": "ef0a917edf73a695922f5097358e567b7c5a576c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_a69a7012",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 10988
+      },
+      "writtenOn": "2017-01-07T00:56:14Z",
+      "side": 1,
+      "message": "same",
+      "revId": "ef0a917edf73a695922f5097358e567b7c5a576c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_869f6c03",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 10988
+      },
+      "writtenOn": "2017-01-07T00:56:14Z",
+      "side": 1,
+      "message": "same",
+      "revId": "ef0a917edf73a695922f5097358e567b7c5a576c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_66a48857",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 168,
+      "author": {
+        "id": 10988
+      },
+      "writtenOn": "2017-01-07T00:56:14Z",
+      "side": 1,
+      "message": "same",
+      "revId": "ef0a917edf73a695922f5097358e567b7c5a576c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
