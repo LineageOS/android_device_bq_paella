@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa3479d7_06e5bca7",
+        "filename": "cmhw/src/org/cyanogenmod/hardware/KeyDisabler.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 10988
+      },
+      "writtenOn": "2017-01-07T00:49:34Z",
+      "side": 1,
+      "message": "Let\u0027s add here\nCopyright (C) 2017 LineageOS",
+      "revId": "a443e3a39abbd2bd5a6b3eaf0681321828539156",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
