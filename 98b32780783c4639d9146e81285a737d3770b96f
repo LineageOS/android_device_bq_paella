@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa3479d7_0677fc03",
+        "filename": "sepolicy/perfd.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 10988
+      },
+      "writtenOn": "2017-01-07T00:40:46Z",
+      "side": 1,
+      "message": "whitespaces",
+      "revId": "98b32780783c4639d9146e81285a737d3770b96f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
