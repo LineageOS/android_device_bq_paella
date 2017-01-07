@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fa3479d7_69bb3b73",
+        "filename": "lineage.dependencies",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 16262
+      },
+      "writtenOn": "2017-01-07T15:12:22Z",
+      "side": 1,
+      "message": "What? I am really confused.\nhttps://github.com/LineageOS/android_device_motorola_falcon/commit/023544c1b1c3a431d2043ebe5c8ed83931a0ff85#diff-dc4ca55782bcdc669b97139c2a0280cb",
+      "parentUuid": "fa3479d7_e68f58cb",
+      "revId": "2549f8cccef072f959a03085bd771a6acbaa531d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa3479d7_a67ef0e2",
         "filename": "lineage.mk",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2017-01-07T00:38:07Z",
       "side": 1,
       "message": "we\u0027re not doing this change",
+      "revId": "2549f8cccef072f959a03085bd771a6acbaa531d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_298653ba",
+        "filename": "lineage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 16262
+      },
+      "writtenOn": "2017-01-07T15:12:22Z",
+      "side": 1,
+      "message": "\u003e we\u0027re not doing this change\n\nWhy? I see another devices and the PRODUCT_NAME are changed, for example\nhttps://github.com/LineageOS/android_device_motorola_falcon/commit/023544c1b1c3a431d2043ebe5c8ed83931a0ff85",
+      "parentUuid": "fa3479d7_a67ef0e2",
       "revId": "2549f8cccef072f959a03085bd771a6acbaa531d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "fa3479d7_a96803f6",
+        "filename": "sensors/bst_fifo/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 16262
+      },
+      "writtenOn": "2017-01-07T15:12:22Z",
+      "side": 1,
+      "message": "\u003e same here\n\nIf I didn\u0027t change this, the sensors doesn\u0027t work.",
+      "parentUuid": "fa3479d7_8683eccb",
+      "revId": "2549f8cccef072f959a03085bd771a6acbaa531d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa3479d7_668808e8",
         "filename": "sensors/bst_fifo/tools/config.mk",
         "patchSetId": 1
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "fa3479d7_896d3f07",
+        "filename": "sensors/bst_fifo/tools/config.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 16262
+      },
+      "writtenOn": "2017-01-07T15:12:22Z",
+      "side": 1,
+      "message": "\u003e same\n\nIf I didn\u0027t change this, the sensors doesn\u0027t work.",
+      "parentUuid": "fa3479d7_668808e8",
+      "revId": "2549f8cccef072f959a03085bd771a6acbaa531d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa3479d7_466d0432",
         "filename": "sensors/bst_fifo/version/version.c",
         "patchSetId": 1
@@ -81,6 +153,24 @@
       "writtenOn": "2017-01-07T00:38:07Z",
       "side": 1,
       "message": "let\u0027s not do this",
+      "revId": "2549f8cccef072f959a03085bd771a6acbaa531d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_a94fe391",
+        "filename": "sensors/bst_fifo/version/version.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 16262
+      },
+      "writtenOn": "2017-01-07T15:12:22Z",
+      "side": 1,
+      "message": "\u003e let\u0027s not do this\n\nok, don\u0027t worry",
+      "parentUuid": "fa3479d7_466d0432",
       "revId": "2549f8cccef072f959a03085bd771a6acbaa531d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
