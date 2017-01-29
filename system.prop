@@ -1,56 +1,6 @@
-# Audio
-ro.qc.sdk.audio.fluencetype=fluence
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
-persist.audio.fluence.speaker=true
-
-# mp3/aac offload to Modem
-av.streaming.offload.enable=true
-audio.offload.gapless.enabled=true
-audio.offload.pcm.16bit.enable=true
-audio.offload.pcm.24bit.enable=true
-audio.offload.disable=0
-
-# set roaming indicator to always show
-ro.config.always_show_roaming=true
-
 # Display
 ro.sf.lcd_density=320
+ro.opengles.version=196608
 
-# Enable OMA-CP
-persist.omacp.enable=true
-
-# Factory reset protection
-ro.frp.pst=/dev/block/bootdevice/by-name/config
-
-# Radio
-rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
-persist.radio.multisim.config=dsds
-persist.radio.no_cons_man_roam=1
-ril.ecclist=000,08,100,101,102,110,112,118,119,120,122,911,999
-
-ro.telephony.default_network=9,1
-
-# USB ID
-ro.usb.id.charge=3009
-ro.usb.id.mtp=3003
-ro.usb.id.mtp_adb=3004
-ro.usb.id.ptp=3005
-ro.usb.id.ptp_adb=3006
-ro.usb.id.ums=3007
-ro.usb.id.ums_adb=3008
-ro.usb.vid=2a47
-
-#Subsystem
-persist.sys.ssr.enable_debug=1
-
-#Storage
-persist.sys.isUsbOtgEnabled=true
-
-#Enable B service adj transition by default
-ro.sys.fw.bservice_enable=true
-ro.sys.fw.bservice_limit=5
-ro.sys.fw.bservice_age=5000
-
-#Wi-Fi
-ro.disableWifiApFirmwareReload=true
+# Perfd
+ro.min_freq_0=800000
