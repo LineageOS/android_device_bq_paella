@@ -16,8 +16,9 @@
 
 package org.cyanogenmod.hardware;
 
+import org.cyanogenmod.internal.util.FileUtils;
+
 import java.io.File;
-import org.cyanogenmod.hardware.util.FileUtils;
 
 /*
  * Disable capacitive keys
@@ -30,19 +31,20 @@ import org.cyanogenmod.hardware.util.FileUtils;
 
 public class KeyDisabler {
 
-    private static String CONTROL_PATH = "/sys/android_touch/buttons";
+    private static String KEY_CONTROL_PATH = "/sys/android_touch/buttons";
+
 
     public static boolean isSupported() {
-        return new File(CONTROL_PATH).exists();
+        return FileUtils.isFileWritable(KEY_CONTROL_PATH);
     }
 
     public static boolean isActive() {
-        if (isSupported()) return (FileUtils.readOneLine(CONTROL_PATH).equals("0"));
+        if (isSupported()) return Integer.parseInt(FileUtils.readOneLine(KEY_CONTROL_PATH)) == 1;
         return false;
     }
 
     public static boolean setActive(boolean state) {
-        if (isSupported()) return FileUtils.writeLine(CONTROL_PATH, (state ? "0" : "1"));
+        if (isSupported()) return FileUtils.writeLine(KEY_CONTROL_PATH, state ? "1" : "0");
         return false;
     }
 
