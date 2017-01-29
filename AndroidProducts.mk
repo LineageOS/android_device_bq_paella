@@ -15,10 +15,5 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
-
-ifeq ($(TARGET_DEVICE),paella)
-
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
-endif
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/full_paella.mk
