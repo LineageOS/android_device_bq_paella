@@ -39,12 +39,12 @@ public class KeyDisabler {
     }
 
     public static boolean isActive() {
-        if (isSupported()) return Integer.parseInt(FileUtils.readOneLine(KEY_CONTROL_PATH)) == 1;
+        if (isSupported()) return Integer.parseInt(FileUtils.readOneLine(KEY_CONTROL_PATH)) == 0;
         return false;
     }
 
     public static boolean setActive(boolean state) {
-        if (isSupported()) return FileUtils.writeLine(KEY_CONTROL_PATH, state ? "1" : "0");
+        if (isSupported()) return FileUtils.writeLine(KEY_CONTROL_PATH, state ? "0" : "1");
         return false;
     }
 
