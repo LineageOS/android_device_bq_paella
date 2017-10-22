@@ -135,8 +135,7 @@ vendor/lib/libmm-color-convertor.so
 
 # DRM
 bin/qseecomd
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/mediadrm/libwvdrmengine.so|416e44ba482f1f97258ff8793b0a810219ac632d
 vendor/lib/libdrmdecrypt.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
@@ -144,16 +143,15 @@ vendor/lib/libQSEEComAPI.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
 vendor/lib/libwvdrm_L3.so
-vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
 
 # GPS
--lib/libloc_api_v02.so
+-lib/libloc_api_v02.so|1446f7324b83bbba35fe2f605be271e0c542a70d
 vendor/lib/hw/flp.default.so
 vendor/lib/libflp.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
+vendor/lib/liblbs_core.so|3cbfa7ba3bb049c978112f2ee119a26575c115cf
 
 # Graphics
 vendor/lib/egl/eglsubAndroid.so
