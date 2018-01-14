@@ -30,8 +30,8 @@ TARGET_OTA_ASSERT_DEVICE := piccolometal,picmt,paella,Aquaris_X5
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/bq/paella/bluetooth
 
-# CMHW
-BOARD_HARDWARE_CLASS += device/bq/paella/cmhw/src
+# Lineagehw
+BOARD_HARDWARE_CLASS += device/bq/paella/lineagehw/src
 TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/SMWP"
 
 # Filesystem
