@@ -9,6 +9,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/bq/paella/full_paella.mk)
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l.mk)
+
 PRODUCT_RELEASE_NAME := Aquaris X5
 PRODUCT_NAME := lineage_paella
 
