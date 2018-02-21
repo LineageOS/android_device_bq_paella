@@ -200,10 +200,6 @@ etc/firmware/venus.b04
 etc/firmware/venus.mbn
 etc/firmware/venus.mdt
 
-# Misc
-bin/adjust_serialno
-bin/adjust_settings
-
 # Perf
 vendor/bin/perfd
 vendor/lib/libqti-perfd-client.so
