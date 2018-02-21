@@ -146,12 +146,12 @@ vendor/lib/libwvdrm_L3.so
 vendor/lib/libWVStreamControlAPI_L3.so
 
 # GPS
--lib/libloc_api_v02.so|1446f7324b83bbba35fe2f605be271e0c542a70d
+-lib/libloc_api_v02.so
 vendor/lib/hw/flp.default.so
 vendor/lib/libflp.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so|3cbfa7ba3bb049c978112f2ee119a26575c115cf
+vendor/lib/liblbs_core.so
 
 # Graphics
 vendor/lib/egl/eglsubAndroid.so
