@@ -1,5 +1,5 @@
 # ADSP
-bin/adsprpcd
+bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvopt.so
 
@@ -24,22 +24,22 @@ vendor/lib/libaudcal.so
 vendor/lib/libFlacSwDec.so
 
 # Bluetooth
-bin/btnvtool
-bin/hci_qcomm_init
+bin/btnvtool:vendor/bin/btnvtool
+bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 vendor/lib/libbtnv.so
 
 # Camera
-bin/mm-qcamera-daemon
-lib/hw/camera.msm8916.so
-lib/libarcsoft_beautyshot.so
-lib/libarcsoft_hdr.so
-lib/libarcsoft_panorama_burstcapture.so
-lib/libcam.beautyshot.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libmm-qcamera.so
-lib/libmpbase.so
-lib/libqomx_core.so
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
+lib/hw/camera.msm8916.so:vendor/lib/hw/camera.msm8916.so
+lib/libarcsoft_beautyshot.so:vendor/lib/libarcsoft_beautyshot.so
+lib/libarcsoft_hdr.so:vendor/lib/libarcsoft_hdr.so
+lib/libarcsoft_panorama_burstcapture.so:vendor/lib/libarcsoft_panorama_burstcapture.so
+lib/libcam.beautyshot.so:vendor/lib/libcam.beautyshot.so
+lib/libmmcamera_interface.so:vendor/lib/libmmcamera_interface.so
+lib/libmmjpeg_interface.so:vendor/lib/libmmjpeg_interface.so
+lib/libmm-qcamera.so:vendor/lib/libmm-qcamera.so
+lib/libmpbase.so:vendor/lib/libmpbase.so
+lib/libqomx_core.so:vendor/lib/libqomx_core.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera2_c2d_module.so
@@ -124,17 +124,17 @@ vendor/lib/libchromatix_s5k5e2_olq5f24_snapshot.so
 vendor/lib/libchromatix_s5k5e2_olq5f24_video_hd.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
+etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw:vendor/firmware/cpp_firmware_v1_4_0.fw
 
 # Color convertor
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
 
 # DRM
-bin/qseecomd
+bin/qseecomd:vendor/bin/qseecomd
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
@@ -143,7 +143,7 @@ vendor/lib/librpmb.so
 vendor/lib/libssd.so
 
 # GPS
--lib/libloc_api_v02.so
+-lib/libloc_api_v02.so:vendor/lib/libloc_api_v02.so
 vendor/lib/hw/flp.default.so
 vendor/lib/libflp.so
 vendor/lib/libgeofence.so
@@ -180,8 +180,8 @@ vendor/lib/libsc-a3xx.so
 vendor/lib/libscale.so
 
 # Graphics firmware
-etc/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw
+etc/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw
+etc/firmware/a300_pm4.fw:vendor/firmware/a300_pm4.fw
 
 # Media
 vendor/lib/libOmxAacDec.so
@@ -189,13 +189,13 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 
 # Media firmware
-etc/firmware/venus.b00
-etc/firmware/venus.b01
-etc/firmware/venus.b02
-etc/firmware/venus.b03
-etc/firmware/venus.b04
-etc/firmware/venus.mbn
-etc/firmware/venus.mdt
+etc/firmware/venus.b00:vendor/firmware/venus.b00
+etc/firmware/venus.b01:vendor/firmware/venus.b01
+etc/firmware/venus.b02:vendor/firmware/venus.b02
+etc/firmware/venus.b03:vendor/firmware/venus.b03
+etc/firmware/venus.b04:vendor/firmware/venus.b04
+etc/firmware/venus.mbn:vendor/firmware/venus.mbn
+etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
 # Perf
 vendor/bin/perfd
@@ -229,10 +229,10 @@ vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
 # Radio
-bin/netmgrd
-bin/qmuxd
-bin/radish
-bin/rmt_storage
+bin/netmgrd:vendor/bin/netmgrd
+bin/qmuxd:vendor/bin/qmuxd
+bin/radish:vendor/bin/radish
+bin/rmt_storage:vendor/bin/rmt_storage
 vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
 vendor/lib/libdsi_netctrl.so
@@ -255,10 +255,10 @@ vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
 # Time services
--app/TimeService/TimeService.apk
-bin/time_daemon
+-app/TimeService/TimeService.apk:vendor/app/TimeService/TimeService.apk
+bin/time_daemon:vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 
 # WLAN
-bin/wcnss_service
+bin/wcnss_service:vendor/bin/wcnss_service
