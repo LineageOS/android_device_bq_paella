@@ -17,6 +17,8 @@
 
 -include device/bq/msm8916-common/BoardConfigCommon.mk
 
+DEVICE_PATH := device/bq/paella
+
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
 
@@ -28,10 +30,10 @@ TARGET_KERNEL_CONFIG := paella_defconfig
 TARGET_OTA_ASSERT_DEVICE := piccolometal,picmt,paella,Aquaris_X5
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/bq/paella/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Lineagehw
-BOARD_HARDWARE_CLASS += device/bq/paella/lineagehw/src
+BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw/src
 TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/SMWP"
 
 # Filesystem
@@ -41,10 +43,10 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12895622922 # (BOARD_USERDATAIMAGE_PARTITI
 TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Properties
-TARGET_SYSTEM_PROP += device/bq/paella/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/bq/paella/sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
 -include vendor/bq/paella/BoardConfigVendor.mk
