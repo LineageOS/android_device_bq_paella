@@ -60,4 +60,13 @@ setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
+DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+sed -i "s|/system/etc|/vendor/etc|g" "$DEVICE_BLOB_ROOT"/vendor/lib/libdsi_netctrl.so
+sed -i 's|/system/etc|/vendor/etc|g' "$DEVICE_BLOB_ROOT"/vendor/bin/netmgrd
+sed -i 's|/system/etc|/vendor/etc|g' "$DEVICE_BLOB_ROOT"/vendor/bin/qmuxd
+sed -i 's|/system/etc|/vendor/etc|g' "$DEVICE_BLOB_ROOT"/vendor/bin/thermal-engine
+sed -i 's|/system/etc|/vendor/etc|g' "$DEVICE_BLOB_ROOT"/vendor/bin/wcnss_service
+
+
 "$MY_DIR"/setup-makefiles.sh
