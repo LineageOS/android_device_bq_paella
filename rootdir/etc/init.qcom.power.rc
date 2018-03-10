@@ -10,8 +10,10 @@ on enable-low-power
     write /proc/sys/kernel/sched_window_stats_policy 3
     write /proc/sys/kernel/sched_ravg_hist_size 3
 
-    # HMP Task packing setting
+    # HMP Task packing settings
     write /proc/sys/kernel/sched_small_task 20
+    write /proc/sys/kernel/sched_mostly_idle_load 30
+    write /proc/sys/kernel/sched_mostly_idle_nr_run 3
 
     # Disable thermal core_control to update ondemand gov settings
     write /sys/module/msm_thermal/core_control/enabled 0
@@ -28,30 +30,18 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "ondemand"
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "ondemand"
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor "msm-adreno-tz"
-    write /sys/class/devfreq/qcom,cpubw.30/governor "msm_cpufreq"
     write /sys/devices/system/cpu/cpufreq/ondemand/up_threshold 90
     write /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate 50000
     write /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy 1
     write /sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor 2
-    write /dev/cpuctl/apps/cpu.notify_on_migrate 1
 
     # Enable thermal core_control now
     write /sys/module/msm_thermal/core_control/enabled 1
 
-    # CPU idle load threshold
-    write /sys/devices/system/cpu/cpu0/sched_mostly_idle_load 30
-    write /sys/devices/system/cpu/cpu1/sched_mostly_idle_load 30
-    write /sys/devices/system/cpu/cpu2/sched_mostly_idle_load 30
-    write /sys/devices/system/cpu/cpu3/sched_mostly_idle_load 30
-
-    # CPU idle nr run threshold
-    write /sys/devices/system/cpu/cpu0/sched_mostly_idle_nr_run 3
-    write /sys/devices/system/cpu/cpu1/sched_mostly_idle_nr_run 3
-    write /sys/devices/system/cpu/cpu2/sched_mostly_idle_nr_run 3
-    write /sys/devices/system/cpu/cpu3/sched_mostly_idle_nr_run 3
-
     # Enable low power modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
+
+    write /sys/class/net/rmnet0/queues/rx-0/rps_cpus 2
 
     start perfd
 
