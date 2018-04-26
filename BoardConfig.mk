@@ -37,9 +37,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/SMWP"
 # Filesystem
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12895622922 # (BOARD_USERDATAIMAGE_PARTITION_SIZE - 16384 for crypto footer)
 
-# Media Extensions
-TARGET_USES_MEDIA_EXTENSIONS := true
-
 # Properties
 TARGET_SYSTEM_PROP += device/bq/paella/system.prop
 
