@@ -25,17 +25,17 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/mixer_paths_qrd_skui.xml:system/vendor/etc/mixer_paths_qrd_skui.xml
+    $(LOCAL_PATH)/configs/mixer_paths_qrd_skui.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qrd_skui.xml
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/himax-touchscreen.kl:system/vendor/usr/keylayout/himax-touchscreen.kl \
-    $(LOCAL_PATH)/keylayout/msm8x16-skui-snd-card_Button_Jack.kl:system/vendor/usr/keylayout/msm8x16-skui-snd-card_Button_Jack.kl
+    $(LOCAL_PATH)/keylayout/himax-touchscreen.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/himax-touchscreen.kl \
+    $(LOCAL_PATH)/keylayout/msm8x16-skui-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/msm8x16-skui-snd-card_Button_Jack.kl
 
 # Media
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_codecs.xml:system/vendor/etc/media_codecs.xml \
-    $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/vendor/etc/media_codecs_performance.xml
+    $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml
 
 # Qualcomm
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -57,4 +57,4 @@ PRODUCT_PACKAGES += \
 
 # Soft magnetic calibration
 PRODUCT_COPY_FILES+= \
-     $(LOCAL_PATH)/sensors/bst_fifo/daemon/softiron_matrix.txt:system/vendor/etc/sensor/softiron_matrix.txt
+     $(LOCAL_PATH)/sensors/bst_fifo/daemon/softiron_matrix.txt:$(TARGET_COPY_OUT_VENDOR)/etc/sensor/softiron_matrix.txt
