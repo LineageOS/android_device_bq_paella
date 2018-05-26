@@ -36,9 +36,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml
 
-# Qualcomm
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.cabl=0
+# Properties
+-include $(LOCAL_PATH)/vendor_prop.mk
 
 # Ramdisk
 PRODUCT_PACKAGES += \

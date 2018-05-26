@@ -39,9 +39,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/SMWP"
 # Filesystem
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12895622922 # (BOARD_USERDATAIMAGE_PARTITION_SIZE - 16384 for crypto footer)
 
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
