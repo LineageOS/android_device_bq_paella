@@ -20,3 +20,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="picmt-user 7.1.2 N2G47H 5.2.0_20180228-1305 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-bq
+
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2018-01-05
