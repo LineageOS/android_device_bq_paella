@@ -22,3 +22,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT=bq/Aquaris_X5/Aquaris_X5:7.1.2/N2G47H/1519827315:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-bq
+
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2018-01-05
