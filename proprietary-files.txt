@@ -248,6 +248,10 @@ vendor/lib/libsmemlog.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
 
+# Sensors
+bin/sensord:vendor/bin/sensord
+lib/hw/sensors.msm8916.so:vendor/lib/hw/sensors.msm8916.so
+
 # Thermal
 vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
