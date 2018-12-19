@@ -202,7 +202,7 @@ vendor/bin/perfd
 vendor/lib/libqti-perfd-client.so
 
 # Postprocessing
-bin/mm-pp-daemon
+bin/mm-pp-daemon:vendor/bin/mm-pp-daemon
 vendor/lib/libdisp-aba.so
 vendor/lib/libmm-abl.so
 vendor/lib/libmm-abl-oem.so
@@ -211,7 +211,7 @@ vendor/lib/libmm-disp-apis.so
 vendor/lib/libmm-qdcm.so
 
 # QMI
-bin/irsc_util
+bin/irsc_util:vendor/bin/irsc_util
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
