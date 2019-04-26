@@ -66,6 +66,8 @@ else
 LOCAL_MODULE = sensord
 endif
 
+LOCAL_VENDOR_MODULE := true
+
 include $(LOCAL_PATH)/../tools/config.mk
 include $(LOCAL_PATH)/../tools/options.mk
 
